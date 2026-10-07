@@ -538,4 +538,702 @@ ALL_CASES = [
         ],
         "post_choices": [
             {"label": "⚖️ [보강판결] 미필적 고의 부정 무죄 확정", "effects": {"humanity": 15, "law": 15, "public": -5, "trust": 15}},
-            {"label": "⚖️ [보강판결] 징역 1년 집행유예 선고", "effects": {"humanity": -10, "law": -
+            {"label": "⚖️ [보강판결] 징역 1년 집행유예 선고", "effects": {"humanity": -10, "law": -10, "public": 0, "trust": -5}}
+        ]
+    },
+    {
+        "id": "m_25",
+        "title": "유사 상표권 침해 모호성 사건",
+        "category": "무죄 판례 / 상표 유사성 부인",
+        "story": "자사 로고 디자인이 유명 브랜드 상표권을 침해했다고 기소된 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "외관과 외형이 유사하여 소비자에게 혼동을 줍니다.",
+        "defense": "호칭, 관념, 전체적 구성에서 혼동 가능성이 없습니다.",
+        "ev2": "[특허청 감정] 일반 소비자의 직관적 오인·혼동 가능성이 극히 낮음.",
+        "real_verdict": "무죄 확정",
+        "real_reason": "상표의 외관·호칭·관념을 종합할 때 상품 출처의 혼동 우려가 없음.",
+        "choices": [
+            {"label": "혼동 가능성 부인 무죄 선고", "effects": {"humanity": 0, "law": 15, "public": 0, "trust": 10}},
+            {"label": "상표법 위반 유죄 선고", "effects": {"humanity": 0, "law": -10, "public": 0, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 상표 유사성 부정 무죄 확정", "effects": {"humanity": 0, "law": 15, "public": 0, "trust": 10}},
+            {"label": "⚖️ [보강판결] 벌금 300만원 선고", "effects": {"humanity": 0, "law": -10, "public": 0, "trust": -5}}
+        ]
+    },
+
+    # --- [무기징역 판례 15개] ---
+    {
+        "id": "l_01",
+        "title": "고유정 전 남편 살인 사건",
+        "category": "무기징역 판례 / 약물 계획 살인",
+        "story": "피고인은 전 남편에게 졸피뎀을 투여한 후 살해하고 사체를 훼손 및 유기했습니다.",
+        "img1": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "치밀하게 계획된 살인이므로 무기징역 선고가 필요합니다.",
+        "defense": "성폭행 시도에 대응한 우발적 정당방위였습니다.",
+        "ev2": "[국과수 감정] 계획적 졸피뎀 구입 및 사전 수색 기록 확보.",
+        "real_verdict": "무기징역 확정 (대법원)",
+        "real_reason": "사전 약물 준비 및 잔혹한 사체 훼손 등 치밀한 계획 살인 인정.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 10, "trust": 10}},
+            {"label": "정당방위 인정 무죄 선고", "effects": {"humanity": 10, "law": -15, "public": -15, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 계획 살인 입증 무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 12, "trust": 15}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 15, "trust": 10}}
+        ]
+    },
+    {
+        "id": "l_02",
+        "title": "강호순 부녀자 연쇄 살인 사건",
+        "category": "무기징역/사형 판례 / 연쇄 살인",
+        "story": "경기 서남부 일대에서 여성 8명을 납치하여 살해한 연쇄 살인 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "인명 경시의 극치이며 사회적 격리가 필수적이므로 중벌을 선고해야 합니다.",
+        "defense": "범행을 인정하고 자백했음을 참작해 주십시오.",
+        "ev2": "[DNA 정밀 분석] 피해자 소지품에서 피고인의 DNA 확증 검출.",
+        "real_verdict": "사형/무기징역 확정",
+        "real_reason": "반인륜적 연쇄 살인으로 영구적 사회 격리가 불가피함.",
+        "choices": [
+            {"label": "무기징역/사형 선고", "effects": {"humanity": -10, "law": 20, "public": 20, "trust": 20}},
+            {"label": "징역 30년 감형", "effects": {"humanity": 10, "law": -15, "public": -20, "trust": -20}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 선고", "effects": {"humanity": -5, "law": 20, "public": 15, "trust": 20}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 20, "trust": 15}}
+        ]
+    },
+    {
+        "id": "l_03",
+        "title": "신림역 흉기 난동 사건",
+        "category": "무기징역 판례 / 묻지마 테러 살인",
+        "story": "낮 시간대 보행자 밀집 지역에서 무차별 흉기 난동으로 인명 피해를 낸 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "무고한 시민들을 향한 테러형 범죄로 무기징역이 필요합니다.",
+        "defense": "열등감 및 심신미약 상태에서의 우발적 범행입니다.",
+        "ev2": "[정신감정] 사이코패스 성향 및 사전 흉기 준비 계획성 입증.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "사회적 불안감을 야기한 무차별 흉기 살인으로 영구 격리 선고.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "심신미약 감형(징역 20년)", "effects": {"humanity": 5, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 20, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 20, "trust": 10}}
+        ]
+    },
+    {
+        "id": "l_04",
+        "title": "가평 계곡 살인 사건 (이은해)",
+        "category": "무기징역 판례 / 미필적 고의 부작위 살인",
+        "story": "수영을 못하는 남편을 다이빙하게 유도한 후 구조하지 않아 숨지게 한 보험금 목적 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "보험금을 노린 미필적 고의에 의한 직접/부작위 살인입니다.",
+        "defense": "피해자 스스로 다이빙한 사고사였습니다.",
+        "ev2": "[음성 복원] 현장 구조 요청을 무시하고 방관한 정황 복원.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "구조 의무를 저버린 부작위에 의한 살인 고의 인정.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "과실치사 인정 감형 선고", "effects": {"humanity": 5, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 부작위 살인 인정 무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 징역 20년 선고", "effects": {"humanity": 0, "law": -10, "public": -10, "trust": -10}}
+        ]
+    },
+    {
+        "id": "l_05",
+        "title": "노원구 세 모녀 살인 사건",
+        "category": "무기징역 판례 / 스토킹 일가족 살인",
+        "story": "스토킹하던 피해자의 집에 퀵서비스 기사로 위장 침입하여 일가족 세 모녀를 살해했습니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "치밀한 계획하에 일가족을 참살했으므로 극형에 처해야 합니다.",
+        "defense": "우발적 감정 조절 실패 및 자백 참작을 요청합니다.",
+        "ev2": "[포렌식] 침입 수법, 도구 준비, 피해자 동선 사전 조사 입증.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "잔혹한 계획 살인으로 사회로부터 영구히 격리함.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "징역 35년 감형 선고", "effects": {"humanity": 5, "law": -10, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 15, "trust": 10}}
+        ]
+    },
+    {
+        "id": "l_06",
+        "title": "부산 돌려차기 강간살인미수 사건",
+        "category": "무기징역/중형 판례 / 무차별 폭행 강간미수",
+        "story": "귀가하던 여성을 뒤따라가 무차별 머리 돌려차기로 의식을 잃게 한 후 은밀한 곳으로 이동시킨 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "강간목적 살인미수로 중형이 선고되어야 합니다.",
+        "defense": "강간 목적이 없었으며 우발적 폭행 상해였습니다.",
+        "ev2": "[DNA 재감정] 피해자 청바지 안쪽에서 피고인의 DNA 확증 검출.",
+        "real_verdict": "징역 20년 확정 (항소심 중형)",
+        "real_reason": "강간 살인 미수 인정으로 중형 선고.",
+        "choices": [
+            {"label": "징역 20년 이상/무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "단순 상해 인정 징역 12년 선고", "effects": {"humanity": 5, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 강간살인미수 인정 중형 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 무기징역 선고", "effects": {"humanity": -10, "law": 20, "public": 15, "trust": 15}}
+        ]
+    },
+    {
+        "id": "l_07",
+        "title": "어금니 아빠 이영학 사건",
+        "category": "무기징역 판례 / 아동 유괴 살인",
+        "story": "딸의 친구인 여중생을 유괴하여 추행하고 살해한 후 사체를 유기한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "아동 대상 추행 및 계획 살인으로 무기징역이 마땅합니다.",
+        "defense": "심신미약 및 반성문을 제출했음을 참작해 주십시오.",
+        "ev2": "[약물 감정] 피해자 체내에서 수면제 성분 대량 검출.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "추악한 아동 대상 범죄로 무기징역 선고.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "징역 20년 감형", "effects": {"humanity": 5, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 15, "trust": 10}}
+        ]
+    },
+    {
+        "id": "l_08",
+        "title": "울산 아동학대 치사 사건",
+        "category": "무기징역/중형 판례 / 아동학대 살인",
+        "story": "계모가 8세 여아를 지속적으로 무자비하게 폭행하여 갈비뼈 부러짐 등으로 숨지게 한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "치사 행위를 넘어선 미필적 고의에 의한 살인입니다.",
+        "defense": "훈육 목적의 폭행이었으며 살해 고의는 없었습니다.",
+        "ev2": "[부검 결과] 지속적 폭행에 의한 장기 파열 및 다발성 골절 검출.",
+        "real_verdict": "징역 18년~무기징역 다툼 끝 중형",
+        "real_reason": "아동학대 살인의 고의성 인정.",
+        "choices": [
+            {"label": "살인죄 적용 무기징역/중형 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "학대치사 인정 징역 10년 선고", "effects": {"humanity": 5, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 살인죄 인정 징역 18년 선고", "effects": {"humanity": -5, "law": 15, "public": 10, "trust": 10}},
+            {"label": "⚖️ [보강판결] 무기징역 선고", "effects": {"humanity": -10, "law": 20, "public": 15, "trust": 15}}
+        ]
+    },
+    {
+        "id": "l_09",
+        "title": "창원 골프연습장 납치 살인 사건",
+        "category": "무기징역 판례 / 강도 살인",
+        "story": "골프연습장 주차장에서 여성을 납치한 후 금품을 빼앗고 살해 및 유기한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "금품을 노린 치밀한 납치 살인으로 무기징역 선고가 필요합니다.",
+        "defense": "우발적 목 누름이었음을 감안해 주십시오.",
+        "ev2": "[CCTV] 사전 차량 번호판 위조 및 유기 장소물 사전 탐색 입증.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "강도살인죄의 계획성 및 잔혹성 인정.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "징역 25년 선고", "effects": {"humanity": 5, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 징역 30년 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    },
+    {
+        "id": "l_10",
+        "title": "안양 초등학생 유괴 살인 사건",
+        "category": "무기징역/사형 판례 / 아동 유괴 잔혹 살인",
+        "story": "초등학생 2명을 유괴하여 잔혹하게 살해하고 시신을 훼손해 암매장한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "어린 어린이들을 향한 극악무도한 범죄이므로 극형이 마땅합니다.",
+        "defense": "시신 훼손에 대해 반성하고 있습니다.",
+        "ev2": "[현장 감정] 피고인 자택에서 피해 어린이들의 유류품 및 DNA 다수 발견.",
+        "real_verdict": "사형/무기징역 확정",
+        "real_reason": "반인륜적 범죄로 사회적 격리 선고.",
+        "choices": [
+            {"label": "무기징역/사형 선고", "effects": {"humanity": -10, "law": 20, "public": 20, "trust": 20}},
+            {"label": "징역 30년 감형", "effects": {"humanity": 10, "law": -20, "public": -20, "trust": -20}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 20, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 20, "trust": 15}}
+        ]
+    },
+    {
+        "id": "l_11",
+        "title": "서현역 AK플라자 차/흉기 난동 사건",
+        "category": "무기징역 판례 / 테러형 무차별 살인",
+        "story": "차량으로 인도 위 보행자를 친 후 백화점으로 들어가 무차별 흉기 난동을 부린 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "불특정 다수를 향한 테러 범죄로 무기징역이 필수적입니다.",
+        "defense": "조현병 및 피해망상으로 인한 심신미약 상태였습니다.",
+        "ev2": "[정신 감정] 심신미약 상태는 인정되나 범행의 위험성 및 재범 가능성이 매우 높음.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "사회 안전을 저해한 대형 무차별 살인으로 영구 격리.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "조현병 감형(징역 20년)", "effects": {"humanity": 5, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 20, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 20, "trust": 10}}
+        ]
+    },
+    {
+        "id": "l_12",
+        "title": "시흥 토막 사체 훼손 살인 사건",
+        "category": "무기징역 판례 / 금전관계 계획 살인",
+        "story": "동거녀를 목 눌러 살해한 후 사체를 잔혹하게 훼손하여 하천에 유기한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "살해 수법과 사체 훼손이 비인간적이므로 무기징역에 처해야 합니다.",
+        "defense": "다투는 과정에서의 우발적 범행이었습니다.",
+        "ev2": "[현장 정밀] 사전 사체 훼손 도구 준비 및 하천 유기 계획성 입증.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "잔혹한 사체 훼손 및 인명 경시 범죄 인정.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "징역 20년 선고", "effects": {"humanity": 5, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 징역 30년 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    },
+    {
+        "id": "l_13",
+        "title": "존속 살해 및 사체 유기 사건",
+        "category": "무기징역 판례 / 반인륜 존속 살인",
+        "story": "재산 상속을 노리고 친부모에게 약물을 투여하여 살해한 반인륜 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "천륜을 어긴 반인륜적 범죄이므로 무기징역이 마땅합니다.",
+        "defense": "부모의 그간 폭언에 대한 충동적 반응이었습니다.",
+        "ev2": "[약물 감정] 사전 희석 약물 제조법 및 상속 포기 각서 조작 입증.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "존속살해죄 가중처벌 및 반인륜성 적용.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "징역 20년 선고", "effects": {"humanity": 5, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 20, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 20, "trust": 10}}
+        ]
+    },
+    {
+        "id": "l_14",
+        "title": "보복 살인 및 스토킹 살해 사건",
+        "category": "무기징역 판례 / 특가법 보복 살인",
+        "story": "경찰 신고에 앙심을 품고 스마트워치를 차고 있던 피해자를 찾아가 살해한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "사법 시스템을 무시한 보복 살인으로 무기징역에 처해야 합니다.",
+        "defense": "우발적 우울증 상태에서의 행동이었습니다.",
+        "ev2": "[위치 추적] 피해자 주거지 사전 4차례 흉기 소지 방문 기록 입증.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "특가법상 보복살인죄 적용 및 무기징역 확정.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "징역 25년 선고", "effects": {"humanity": 5, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 사형 선고", "effects": {"humanity": -15, "law": 20, "public": 15, "trust": 10}}
+        ]
+    },
+    {
+        "id": "l_15",
+        "title": "인천 영종도 강도살인 및 사체유기",
+        "category": "무기징역 판례 / 강도 살인",
+        "story": "택시 기사를 유인하여 살해하고 금품을 빼앗은 뒤 영종도 해안가에 유기했습니다.",
+        "img1": "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "서민 대상 계획 강도 살인으로 무기징역이 타당합니다.",
+        "defense": "요금 다툼 과정의 우발적 범행이었습니다.",
+        "ev2": "[CCTV] 대포폰을 사용한 유인 및 사전 흉기 소지 입증.",
+        "real_verdict": "무기징역 확정",
+        "real_reason": "치밀한 계획 강도 살인죄 인정.",
+        "choices": [
+            {"label": "무기징역 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "징역 20년 선고", "effects": {"humanity": 5, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 무기징역 확정", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 징역 30년 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    },
+
+    # --- [유기징역 판례 10개] ---
+    {
+        "id": "t_01",
+        "title": "음주운전 2회 적발 인명 피해 사건",
+        "category": "유기징역 판례 / 윤창호법 특가법",
+        "story": "음주운전 재범 상태에서 인도로 돌진하여 보행자에게 중상을 입히고 도주하려 한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "윤창호법을 적용하여 징역 8년 중형에 처해야 합니다.",
+        "defense": "자백하고 피해자와 합의를 진행 중입니다.",
+        "ev2": "[블랙박스] 음주 수치 0.18% 및 도주 시도 정황 확보.",
+        "real_verdict": "징역 6년 선고 확정",
+        "real_reason": "특가법상 위험운전치상 및 재범 가중처벌 적용.",
+        "choices": [
+            {"label": "징역 8년 선고", "effects": {"humanity": -5, "law": 10, "public": 10, "trust": 10}},
+            {"label": "합의 참작 징역 3년 선고", "effects": {"humanity": 10, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 6년 선고", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "⚖️ [보강판결] 징역 4년 집행유예 선고", "effects": {"humanity": 5, "law": -10, "public": -10, "trust": -10}}
+        ]
+    },
+    {
+        "id": "t_02",
+        "title": "대형 전세사기 다수 피해자 사건",
+        "category": "유기징역 판례 / 사기죄 법정 최고형 부근",
+        "story": "수백 채의 빌라를 이용해 무자본 갭투자로 청년들의 전세보증금 수백억을 편취했습니다.",
+        "img1": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "서민 삶을 흔든 범죄로 사기죄 법정 최고형인 징역 15년을 구형합니다.",
+        "defense": "부동산 경기 하락에 따른 불가피한 부도였습니다.",
+        "ev2": "[계약서 정밀] 리베이트 수수 및 보증금 반환 불가능 구조 사전 인지 입증.",
+        "real_verdict": "징역 15년 확정",
+        "real_reason": "다수 피해자를 낳은 조직적 사기죄 최고형 적용.",
+        "choices": [
+            {"label": "징역 15년(최고형) 선고", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "징역 7년 선고", "effects": {"humanity": 5, "law": -10, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 15년 확정", "effects": {"humanity": -5, "law": 15, "public": 15, "trust": 15}},
+            {"label": "⚖️ [보강판결] 징역 10년 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    },
+    {
+        "id": "t_03",
+        "title": "층간소음 흉기 상해치사 사건",
+        "category": "유기징역 판례 / 상해치사 우발적 범행",
+        "story": "지속된 층간소음 갈등 중 홧김에 흉기로 이웃을 공격하여 숨지게 한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "살인의 미필적 고의가 인정되므로 징역 15년이 필요합니다.",
+        "defense": "살해 고의가 없었던 상해치사이며 유족과 합의했습니다.",
+        "ev2": "[녹음 파일] 충동적 다툼 상황 및 치명상 부위 비조준 입증.",
+        "real_verdict": "징역 12년 확정",
+        "real_reason": "살인 고의 부정, 상해치사죄 인정 및 감형 참작.",
+        "choices": [
+            {"label": "상해치사 징역 12년 선고", "effects": {"humanity": 5, "law": 10, "public": 5, "trust": 10}},
+            {"label": "살인죄 적용 징역 20년 선고", "effects": {"humanity": -10, "law": -5, "public": 5, "trust": -5}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 12년 확정", "effects": {"humanity": 5, "law": 10, "public": 5, "trust": 10}},
+            {"label": "⚖️ [보강판결] 징역 15년 선고", "effects": {"humanity": -5, "law": 5, "public": 5, "trust": 0}}
+        ]
+    },
+    {
+        "id": "t_04",
+        "title": "고위 공직자 뇌물 수수 사건",
+        "category": "유기징역 판례 / 뇌물죄 징역형",
+        "story": "인허가 대가로 건설업체로부터 수억 원 상당의 금품 및 특혜를 받은 혐의입니다.",
+        "img1": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "공직 청렴성을 훼손했으므로 징역 7년 및 벌금/추징금을 구형합니다.",
+        "defense": "차용금이었을 뿐 대가성이 없었습니다.",
+        "ev2": "[계좌 추적] 대가성 차명 계좌 송금 내역 확증.",
+        "real_verdict": "징역 7년 및 벌금 5억원 확정",
+        "real_reason": "특가법상 뇌물수수죄 대가성 인정.",
+        "choices": [
+            {"label": "징역 7년 및 벌금 선고", "effects": {"humanity": 0, "law": 15, "public": 10, "trust": 15}},
+            {"label": "징역 3년 집행유예 선고", "effects": {"humanity": 0, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 7년 확정", "effects": {"humanity": 0, "law": 15, "public": 10, "trust": 15}},
+            {"label": "⚖️ [보강판결] 징역 5년 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    },
+    {
+        "id": "t_05",
+        "title": "데이트 폭력 치사 사건",
+        "category": "유기징역 판례 / 폭행치사 징역형",
+        "story": "연인을 폭행하여 상해를 입힌 후 사망에 이르게 한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800&q=80",
+        "prosecution": "중한 폭행에 따른 사망으로 징역 12년이 선고되어야 합니다.",
+        "defense": "치료 조치를 하려 했으며 우발적 폭행이었습니다.",
+        "ev2": "[부검 결과] 폭행에 따른 장기 손상이 직접 사망 원인임.",
+        "real_verdict": "징역 10년 확정",
+        "real_reason": "폭행과 사망 사이 인과관계 인정으로 상해치사죄 중형.",
+        "choices": [
+            {"label": "징역 10년 선고", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "징역 5년 감형 선고", "effects": {"humanity": 5, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 10년 확정", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "⚖️ [보강판결] 징역 12년 선고", "effects": {"humanity": -5, "law": 5, "public": 5, "trust": 5}}
+        ]
+    },
+    {
+        "id": "t_06",
+        "title": "음주 뺑소니(특가법 도주치사) 사건",
+        "category": "유기징역 판례 / 도주치사 징역형",
+        "story": "음주 상태에서 보행자를 치어 숨지게 한 후 사고 현장을 이탈해 도주했습니다.",
+        "img1": "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "도주 및 증거인멸 시도로 징역 8년을 구형합니다.",
+        "defense": "당황하여 도주했으나 이튿날 자수했습니다.",
+        "ev2": "[CCTV 영상] 사고 후 블랙박스 칩을 은닉하려 한 정황 포착.",
+        "real_verdict": "징역 6년 선고 확정",
+        "real_reason": "특가법상 도주치사죄 중형 선고.",
+        "choices": [
+            {"label": "징역 6년 선고", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "자수 참작 징역 2년 6개월 선고", "effects": {"humanity": 5, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 6년 확정", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "⚖️ [보강판결] 징역 8년 선고", "effects": {"humanity": -5, "law": 5, "public": 5, "trust": 5}}
+        ]
+    },
+    {
+        "id": "t_07",
+        "title": "응급실 의료진 난동 폭행 사건",
+        "category": "유기징역 판례 / 응급의료법 위반",
+        "story": "술에 취해 응급실에서 의료진을 난동 폭행하여 전치 6주의 상해를 입혔습니다.",
+        "img1": "https://images.unsplash.com/photo-1516549655169-df83a0774514?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "응급의료 체계를 방해한 중범죄로 징역 3년 6개월이 필요합니다.",
+        "defense": "음주로 인한 심신미약 상태였습니다.",
+        "ev2": "[응급실 CCTV] 의료 장비를 파손하고 진료를 지속 방해함.",
+        "real_verdict": "징역 3년 확정",
+        "real_reason": "응급의료법 위반 및 공공 안전 저해 중형 선고.",
+        "choices": [
+            {"label": "징역 3년 실형 선고", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "음주 참작 집행유예 선고", "effects": {"humanity": 5, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 3년 확정", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "⚖️ [보강판결] 징역 1년 6개월 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    },
+    {
+        "id": "t_08",
+        "title": "체육계 지위 이용 강제추행 사건",
+        "category": "유기징역 판례 / 성폭력 가중처벌",
+        "story": "감독이라는 지위를 이용해 오랜 기간 선수들을 상습 추행한 사건입니다.",
+        "img1": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "위력에 의한 상습 범행으로 징역 5년을 구형합니다.",
+        "defense": "친밀감의 표시였으며 위력 행사가 아니었습니다.",
+        "ev2": "[피해자 진술] 일관된 피해 진술 및 선수 기평가 불이익 위협 입증.",
+        "real_verdict": "징역 4년 확정",
+        "real_reason": "위력에 의한 강제추행 인정.",
+        "choices": [
+            {"label": "징역 4년 실형 선고", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "집행유예 선고", "effects": {"humanity": 5, "law": -15, "public": -15, "trust": -15}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 4년 확정", "effects": {"humanity": 0, "law": 10, "public": 10, "trust": 10}},
+            {"label": "⚖️ [보강판결] 징역 2년 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    },
+    {
+        "id": "t_09",
+        "title": "불법 도박 사이트 개설 총책 사건",
+        "category": "유기징역 판례 / 도박개장 및 추징",
+        "story": "해외 서버를 두고 불법 도박 사이트를 운영하여 수백억 원의 불법 이득을 취득했습니다.",
+        "img1": "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "조직적 사기 및 도박개장으로 징역 6년 및 추징금을 구형합니다.",
+        "defense": "단순 시스템 개발자일 뿐 총책이 아니었습니다.",
+        "ev2": "[수사 기록] 수익금 배분 계좌 총괄 관리자임이 입증됨.",
+        "real_verdict": "징역 5년 및 추징금 확정",
+        "real_reason": "불법 도박개장 총책 혐의 인정.",
+        "choices": [
+            {"label": "징역 5년 및 추징금 선고", "effects": {"humanity": 0, "law": 15, "public": 10, "trust": 10}},
+            {"label": "징역 2년 감형 선고", "effects": {"humanity": 0, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 5년 확정", "effects": {"humanity": 0, "law": 15, "public": 10, "trust": 10}},
+            {"label": "⚖️ [보강판결] 징역 3년 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    },
+    {
+        "id": "t_10",
+        "title": "보이스피싱 중간 간부 범죄단체 가입",
+        "category": "유기징역 판례 / 범죄단체조직죄",
+        "story": "보이스피싱 콜센터 팀장으로서 상담원들을 관리하고 송금을 총괄했습니다.",
+        "img1": "https://images.unsplash.com/photo-1553531384-cc64ac80f931?w=800&q=80",
+        "img2": "https://images.unsplash.com/photo-1450133064473-71024230f91b?w=800&q=80",
+        "prosecution": "범죄단체 조직 및 핵심 가담으로 징역 10년이 필요합니다.",
+        "defense": "상부의 지시만 따랐던 수동적 역할이었습니다.",
+        "ev2": "[통화 내역] 상담원 수수료 배분 및 행동 수칙 교육 정황 입증.",
+        "real_verdict": "징역 9년 확정",
+        "real_reason": "범죄단체 가입 및 조직적 사기죄 적용.",
+        "choices": [
+            {"label": "징역 9년 선고", "effects": {"humanity": 0, "law": 15, "public": 10, "trust": 15}},
+            {"label": "징역 4년 감형 선고", "effects": {"humanity": 0, "law": -10, "public": -10, "trust": -10}}
+        ],
+        "post_choices": [
+            {"label": "⚖️ [보강판결] 징역 9년 확정", "effects": {"humanity": 0, "law": 15, "public": 10, "trust": 15}},
+            {"label": "⚖️ [보강판결] 징역 6년 선고", "effects": {"humanity": 0, "law": -5, "public": -5, "trust": -5}}
+        ]
+    }
+]
+
+def clamp(v):
+    return max(0, min(100, v))
+
+# 세션 초기화
+if "initialized" not in st.session_state:
+    st.session_state.initialized = True
+    st.session_state.judge_name = "전자고사법관"
+    st.session_state.humanity = 50
+    st.session_state.law = 50
+    st.session_state.public = 50
+    st.session_state.trust = 60
+    st.session_state.case_index = 0
+    st.session_state.postpone_credits = 1  # 💡 한 게임(3 사건) 당 딱 1번만 가능
+    st.session_state.is_postponed = False
+    st.session_state.history = []
+
+    # 전체 50개 사건 중 3개를 무작위 추출
+    st.session_state.cases = random.sample(ALL_CASES, min(3, len(ALL_CASES)))
+
+st.title("⚖️ AI 판사: 균형의 법정 v12.2")
+
+# 사이드바
+with st.sidebar:
+    st.header(f"🏛️ {st.session_state.judge_name}")
+    st.divider()
+    st.subheader("📊 현재 사법 지표")
+    st.progress(st.session_state.humanity / 100, text=f"❤️ 인간 중심: {st.session_state.humanity}")
+    st.progress(st.session_state.law / 100, text=f"📜 법적 엄격함: {st.session_state.law}")
+    st.progress(st.session_state.public / 100, text=f"🏛️ 공공 이익: {st.session_state.public}")
+    st.progress(st.session_state.trust / 100, text=f"🛡️ 사회적 신뢰: {st.session_state.trust}")
+    st.divider()
+    st.info(f"🔍 2차 정밀 증거 요청 찬스: **{st.session_state.postpone_credits} / 1회 남음**")
+    st.divider()
+    if st.button("🔄 새 게임 시작"):
+        st.session_state.clear()
+        st.rerun()
+
+# 게임 진행 화면
+if st.session_state.case_index < len(st.session_state.cases):
+    case = st.session_state.cases[st.session_state.case_index]
+    
+    st.caption(f"📍 재판 진행도: {st.session_state.case_index + 1} / 3")
+    st.subheader(f"⚖️ 사건 {st.session_state.case_index + 1}: {case['title']}")
+    st.caption(f"분야: {case['category']}")
+
+    col_img, col_info = st.columns([1, 1.2])
+    with col_img:
+        if not st.session_state.is_postponed:
+            st.image(case["img1"], caption="📸 1차 제출 현장 증거 사진", use_container_width=True)
+        else:
+            st.image(case["img2"], caption="🔍 2차 정밀 포렌식/부검 증거 사진", use_container_width=True)
+
+    with col_info:
+        st.info(f"**사건 개요:**\n\n{case['story']}")
+        t1, t2 = st.tabs(["⚖️ 검찰 구형", "🛡️ 변호인 변론"])
+        with t1:
+            st.write(case["prosecution"])
+        with t2:
+            st.write(case["defense"])
+
+    if st.session_state.is_postponed:
+        st.success(f"🔍 **2차 추가 증거 개시:**\n\n{case['ev2']}")
+
+    st.divider()
+    st.subheader("⚖️ 판결 선택")
+
+    if not st.session_state.is_postponed:
+        if st.session_state.postpone_credits > 0:
+            if st.button("🔍 판결 유예 및 2차 정밀 증거 요청 (게임 당 1회 제한)", key=f"postpone_{st.session_state.case_index}"):
+                st.session_state.postpone_credits -= 1
+                st.session_state.is_postponed = True
+                st.rerun()
+        else:
+            st.caption("⚠️ *이번 게임의 2차 정밀 증거 요청 찬스를 이미 사용하셨습니다.*")
+
+        st.write("")
+        for idx, choice in enumerate(case["choices"]):
+            with st.container(border=True):
+                st.markdown(f"**{choice['label']}**")
+                if st.button("⚖️ 이 판결 선고", key=f"btn_{st.session_state.case_index}_{idx}"):
+                    for k, v in choice["effects"].items():
+                        st.session_state[k] = clamp(st.session_state[k] + v)
+                    
+                    st.session_state.history.append({
+                        "case": case["title"],
+                        "my_decision": choice["label"],
+                        "real_verdict": case["real_verdict"],
+                        "real_reason": case["real_reason"]
+                    })
+                    st.session_state.case_index += 1
+                    st.session_state.is_postponed = False
+                    st.rerun()
+
+    else:
+        for idx, choice in enumerate(case["post_choices"]):
+            with st.container(border=True):
+                st.markdown(f"**{choice['label']}**")
+                if st.button("⚖️ 이 보강 판결 선고", key=f"btn_post_{st.session_state.case_index}_{idx}"):
+                    for k, v in choice["effects"].items():
+                        st.session_state[k] = clamp(st.session_state[k] + v)
+                    
+                    st.session_state.history.append({
+                        "case": f"{case['title']} (2차 증거 제출)",
+                        "my_decision": choice["label"],
+                        "real_verdict": case["real_verdict"],
+                        "real_reason": case["real_reason"]
+                    })
+                    st.session_state.case_index += 1
+                    st.session_state.is_postponed = False
+                    st.rerun()
+
+# 재판 종결 리포트 화면
+else:
+    st.balloons()
+    st.title("🏛️ 재판 종결: 판사 성향 및 판례 비교 리포트")
+    
+    persona = analyze_judge_persona(
+        st.session_state.humanity,
+        st.session_state.law,
+        st.session_state.public,
+        st.session_state.trust
+    )
+    
+    st.container(border=True).markdown(f"""
+    ## 🧐 {st.session_state.judge_name}님의 사법 성향 진단
+    ### **{persona['title']}**
+    
+    {persona['desc']}
+    """)
+
+    st.divider()
+    st.subheader("📜 내 판결 VS 실제 대법원 판례 비교")
+    for idx, item in enumerate(st.session_state.history):
+        with st.expander(f"사건 {idx+1}: {item['case']}", expanded=True):
+            col_a, col_b = st.columns(2)
+            with col_a:
+                st.warning(f"**내 판결:** {item['my_decision']}")
+            with col_b:
+                st.success(f"**실제 대법원:** {item['real_verdict']}")
+            st.caption(f"**판단 이유:** {item['real_reason']}")
+
+    if st.button("🔄 새 게임 시작", type="primary", use_container_width=True):
+        st.session_state.clear()
+        st.rerun()
